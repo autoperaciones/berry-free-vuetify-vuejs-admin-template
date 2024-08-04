@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
-import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
+// import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
 import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
 import Customizer from './customizer/CustomizerPanel.vue';
 import FooterPanel from './footer/FooterPanel.vue';
@@ -15,14 +15,14 @@ const customizer = useCustomizerStore();
       :class="[customizer.fontTheme, customizer.mini_sidebar ? 'mini-sidebar' : '', customizer.inputBg ? 'inputWithbg' : '']"
     >
       <Customizer />
-      <VerticalSidebarVue />
+      <!-- <VerticalSidebarVue /> -->
       <VerticalHeaderVue />
 
       <v-main>
-        <v-container fluid class="page-wrapper">
+        <v-container class="page-wrapper">
           <div>
             <RouterView />
-            <v-btn
+            <!-- <v-btn
               class="customizer-btn"
               size="large"
               icon
@@ -31,7 +31,7 @@ const customizer = useCustomizerStore();
               @click.stop="customizer.SET_CUSTOMIZER_DRAWER(!customizer.Customizer_drawer)"
             >
               <SettingsIcon class="icon" />
-            </v-btn>
+            </v-btn> -->
           </div>
         </v-container>
         <v-container fluid class="pt-0">
