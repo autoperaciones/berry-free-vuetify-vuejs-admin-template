@@ -44,7 +44,7 @@ const cards = products.map((product: any) => ({
               density="comfortable"
             >
               <ScaleIcon size="15" />
-              {{card.gramos}}
+              {{card.gramos}} grs.
             </v-btn>
           <v-spacer />
             <v-btn
